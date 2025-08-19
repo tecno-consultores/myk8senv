@@ -1,0 +1,8 @@
+https://linuxhint.com/linux-sysctls-kubernetes/
+https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/
+https://docs.k3s.io/advanced
+------------
+https://github.com/lnxbil/docker-machine-driver-proxmox-ve
+https://rke.docs.rancher.com/config-options/cloud-providers/custom
+------
+https://metallb.universe.tf/

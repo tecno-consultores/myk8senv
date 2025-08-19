@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # Made by Sinfallas <sinfallas@yahoo.com>
-# Licence: GPL-3
+# Licence: GPL-2
 LC_ALL=C
 nom=$(basename "$0")
 mirandom=$(dd if=/dev/urandom bs=1 count=64 2>/dev/null | base64 -w 0 | tr -dc _A-Z-a-z-0-9 | cut -c 1-8)
 miip=$(ip addr show $(ip route | awk '/default/ { print $5 }') | grep "inet" | head -n 1 | awk '/inet/ {print $2}' | cut -d'/' -f1)
-kversion=v1.26.13
-cversion=v1.14.4
+kversion=v1.31.0
+cversion=v1.15.3
 dversion=v2.7.0
 unir=/root/unir.txt
 mylog="/var/log/$nom.log"
@@ -17,6 +17,7 @@ function clean_1() {
 	rm -f /run/$nom.pid
 	rm -f "$LOCKFILE"
 }
+
 trap "clean_1; exit" 0 1 2 3 15
 siroot
 echo "$BASHPID" > /run/$nom.pid
