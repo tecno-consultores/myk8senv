@@ -1,4 +1,6 @@
 # myk8senv
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/tecno-consultores/myk8senv)
+
 Script to install and launch multiple versions of kubernetes K8S, K3S, K3D
 
 ```
